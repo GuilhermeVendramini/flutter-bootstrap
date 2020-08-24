@@ -27,7 +27,7 @@ flutter pub get
 ```shell  
  flutter pub run build_runner  
 ```  
-or to build in real-time:  
+or to auto rebuild:
   
 ```shell  
  flutter pub run build_runner watch  
