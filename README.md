@@ -103,8 +103,14 @@ Files inside "**shared/utils**" don't need to add the parent prefix folder struc
 
 ```
 - shared
-	- utils
-		- snackbars
-			snackbar.default.dart
-			snackbar.custom.dart
+	-- utils
+		--- snackbars
+            snackbar.default.dart
+            snackbar.custom.dart
+		--- i18n
+		    ---- locales
+		        en-US.dart
+		        pt-BR.dart
+            i18n.config.dart
+            i18n.translate.dart
 ```
