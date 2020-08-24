@@ -16,12 +16,12 @@ flutter pub get
 ```shell
  flutter pub run build_runner
 ```
-Or to build in real-time
+or to build in real-time:
 
 ```shell
  flutter pub run build_runner watch
 ```
-Run
+run:
 
 ```shell
  flutter run
@@ -33,7 +33,7 @@ Run
   - [provider](https://pub.dev/packages/provider)
   - [i18n_extension](https://pub.dev/packages/i18n_extension)
   - [hive](https://pub.dev/packages/hive)
-  - [hive_flutter]([https://pub.dev/packages/hive_flutter](https://pub.dev/packages/hive_flutter))
+  - [hive_flutter](https://pub.dev/packages/hive_flutter)
   - [path_provider](https://pub.dev/packages/path_provider)
 
 Developer packages
