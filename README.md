@@ -2,7 +2,7 @@
 
 Flutter structure pattern using provider and mobx.
 
-Languages: English (this file), [Brazilian Portuguese] (README.pt-br.md)
+Languages: English (this file), [Brazilian Portuguese](README.pt-br.md)
 
 - [Requirements](#requirements)
 - [Starting](#starting)
