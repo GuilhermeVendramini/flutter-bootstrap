@@ -15,7 +15,7 @@ Languages: English (this file), [Brazilian Portuguese](README.pt-br.md)
 
 ## Requirements
 
-- [Flutter](https://flutter.dev/docs/get-started/install){:target="_blank"}
+- [Flutter](https://flutter.dev/docs/get-started/install)
 
 ## Starting
 
