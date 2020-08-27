@@ -119,7 +119,7 @@ All custom modules should stay inside modules folder and respect the basic state
 
 Inside shared folder we keep everything that can be shared with another modules. Example: models, repositories, services, widgets, etc.
 
-Files inside "**shared/utils**" don't need to have the prefix of the parent folder structure".
+Files inside "**shared/utils**" don't need to have the prefix of the parent folders structure".
 
 ```
 - shared

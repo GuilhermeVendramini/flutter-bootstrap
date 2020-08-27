@@ -117,7 +117,7 @@ Todos os módulos personalizados devem permanecer dentro da pasta "modules" e re
 
 #### Shared
 
-Dentro da pasta "shared" guardamos tudo o que pode ser compartilhado com outros módulos. Exemplo: : models, repositories, services, widgets, etc.
+Dentro da pasta "shared" guardamos tudo o que pode ser compartilhado com outros módulos. Exemplo: models, repositories, services, widgets, etc.
 
 Os arquivos dentro de "**shared/utils**" não precisam ter o prefixo das pastas pai.
 
