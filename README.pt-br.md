@@ -76,7 +76,7 @@ Pacotes de desenvolvedor
 
 O código precisa seguir o [Linter for Dart](https://dart-lang.github.io/linter/lints/index.html).
 
-### Estrutura de pastas
+### Estrutura de pastas e nomes de arquivos
 
 Todos os nomes das pastas devem seguir o padrão "lowerCamelCase":
 
@@ -84,7 +84,7 @@ Todos os nomes das pastas devem seguir o padrão "lowerCamelCase":
 - superModuleName
 ```
 
-Todos os nomes de arquivos precisam seguir "lowerCamelCase" prefixado com o nome da estrutura da pasta pai (no singular):
+Todos os nomes de arquivos precisam seguir "lowerCamelCase" prefixado com o nome da estrutura das pastas pai (no singular):
 
 ```
 - superModuleName

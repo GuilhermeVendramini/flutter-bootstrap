@@ -76,7 +76,7 @@ Developer packages
 
 The code needs to follow the [Linter for Dart](https://dart-lang.github.io/linter/lints/index.html).
 
-### Folders structure
+### Folders structure and filenames
 
 All folders name needs to follow "lowerCamelCase" pattern:
 
@@ -84,7 +84,7 @@ All folders name needs to follow "lowerCamelCase" pattern:
 - superModuleName
 ```
 
-All files name needs to follow "lowerCamelCase" prefixed with parent folder structure name (in the singular):
+All filenames needs to follow "lowerCamelCase" prefixed with parents folders structure name (in the singular):
 
 ```
 - superModuleName
