@@ -76,7 +76,7 @@ Pacotes de desenvolvedor
 
 O código precisa seguir o [Linter for Dart](https://dart-lang.github.io/linter/lints/index.html).
 
-### Folders structure
+### Estrutura de pastas
 
 Todos os nomes das pastas devem seguir o padrão "lowerCamelCase":
 
