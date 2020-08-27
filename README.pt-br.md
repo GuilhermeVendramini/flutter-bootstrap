@@ -2,7 +2,7 @@
 
 Padrão de estrutura Flutter usando provider e mobx.
 
-Languages: English (README.md), [Brazilian Portuguese] (esse arquivo)
+Languages: [English](README.md), Português do Brasil (esse arquivo)
 
 - [Requisitos](#requisitos)
 - [Iniciando](#iniciando)
