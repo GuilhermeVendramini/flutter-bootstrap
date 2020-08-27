@@ -39,7 +39,7 @@ ou para reconstruir automaticamente:
  flutter pub run build_runner watch
 ```
 
-Execute o aplicativo:
+**Execute o aplicativo:**
 
 ```shell
  flutter run

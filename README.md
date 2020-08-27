@@ -39,7 +39,7 @@ or to auto rebuild:
  flutter pub run build_runner watch
 ```
 
-Run the app:
+run the app:
 
 ```shell
  flutter run
