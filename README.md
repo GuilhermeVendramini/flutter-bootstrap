@@ -84,7 +84,7 @@ All folders name needs to follow "lowerCamelCase" pattern:
 - superModuleName
 ```
 
-All filenames needs to follow "lowerCamelCase" prefixed with parents folders structure name (in the singular):
+All filenames needs to follow "lowerCamelCase" prefixed with parent folders structure name (in the singular):
 
 ```
 - superModuleName
