@@ -105,6 +105,14 @@ extension Localization on String {
       {
         "en_us": _i18nEnUS.authLoginErrorMessage,
         "pt_br": _i18nPtBR.authLoginErrorMessage,
+      } +
+      {
+        "en_us": _i18nEnUS.currentUserErrorMessage,
+        "pt_br": _i18nPtBR.currentUserErrorMessage,
+      } +
+      {
+        "en_us": _i18nEnUS.authErrorMessage,
+        "pt_br": _i18nPtBR.authErrorMessage,
       };
 
   String get i18n => localize(this, t);

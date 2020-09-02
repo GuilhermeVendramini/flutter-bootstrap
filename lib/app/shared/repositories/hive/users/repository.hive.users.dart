@@ -51,7 +51,7 @@ class _HiveUserRepository {
   Future<void> deleteCurrentUser() async {
     try {
       await _loadCurrentUserBox();
-      _currentUserBox.delete('currentUser');
+      await _currentUserBox.delete('currentUser');
     } catch (e) {
       throw e;
     }

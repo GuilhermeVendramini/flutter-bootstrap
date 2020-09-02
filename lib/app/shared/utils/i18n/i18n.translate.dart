@@ -15,6 +15,12 @@ abstract class I18nTranslate {
   String welcomeMessage;
 
   /*
+   * User
+   * */
+
+  String currentUserErrorMessage;
+
+  /*
   * Validators
   * */
 
@@ -30,6 +36,7 @@ abstract class I18nTranslate {
   String authLoginForgotPassword;
   String authLoginSignUp;
   String authLoginErrorMessage;
+  String authErrorMessage;
 
   /*
   * Register

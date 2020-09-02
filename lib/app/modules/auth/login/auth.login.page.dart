@@ -7,6 +7,7 @@ class AuthLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: Key('AuthLoginPage'),
       appBar: AppBar(
         title: Text(i18nDefault.login.i18n),
       ),

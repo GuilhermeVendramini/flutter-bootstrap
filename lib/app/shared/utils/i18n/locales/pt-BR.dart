@@ -27,4 +27,6 @@ class I18nStrings implements I18nTranslate {
   String coreNotFoundMessage =
       'Página não encontrada ou você não tem as credenciais necessárias.';
   String authLoginErrorMessage = 'Usuário ou senha inválidos';
+  String currentUserErrorMessage = 'Erro carregar usuário';
+  String authErrorMessage = 'Erro ao autenticar';
 }

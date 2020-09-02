@@ -9,16 +9,6 @@ class ServiceUsers {
   Future<ModelUser> loadCurrentUser() async {
     try {
       ModelUser _currentUser = await _repositoryHiveUsers.getCurrentUser();
-
-      if (_currentUser != null) return _currentUser;
-
-      Map<dynamic, dynamic> _result =
-          await _repositoryMockUsers.getCurrentUser();
-
-      if (_result == null) return null;
-
-      _currentUser = ModelUser.fromMap(_result);
-      _repositoryHiveUsers.saveCurrentUser(user: _currentUser);
       return _currentUser;
     } catch (e) {
       throw e;
@@ -28,9 +18,15 @@ class ServiceUsers {
   Future<ModelUser> signInWithEmailPassword(
       {String email, String password}) async {
     try {
-      if (email != 'admin@admin.com' && password != '12345678') return null;
+      if (email != 'admin@admin.com' || password != '12345678') return null;
 
-      return await loadCurrentUser();
+      Map<dynamic, dynamic> _result =
+          await _repositoryMockUsers.getCurrentUser();
+
+      ModelUser _currentUser = ModelUser.fromMap(_result);
+      _repositoryHiveUsers.saveCurrentUser(user: _currentUser);
+
+      return _currentUser;
     } catch (e) {
       throw e;
     }

@@ -66,7 +66,7 @@ abstract class _AuthLoginBase with Store {
       signInUserStatus = SignInUserStatus.DONE;
       return currentUser;
     } catch (e) {
-      messageStatus = e.message;
+      messageStatus = i18nDefault.authErrorMessage.i18n;
       signInUserStatus = SignInUserStatus.ERROR;
       return null;
     }

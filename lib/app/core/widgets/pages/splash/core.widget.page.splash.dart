@@ -33,6 +33,7 @@ class _CoreWidgetPageSplashState extends State<CoreWidgetPageSplash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: Key('CoreWidgetPageSplash'),
       appBar: AppBar(
         title: Text(i18nDefault.appName.i18n),
       ),
@@ -44,6 +45,8 @@ class _CoreWidgetPageSplashState extends State<CoreWidgetPageSplash> {
                 return Text(_coreController.messageStatus);
                 break;
               case UserLoadStatus.LOADING:
+                return CircularProgressIndicator();
+                break;
               case UserLoadStatus.DONE:
               case UserLoadStatus.IDLE:
               default:
