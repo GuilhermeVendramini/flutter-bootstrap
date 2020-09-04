@@ -18,6 +18,7 @@ class CoreWidget extends StatelessWidget {
     final CoreController _coreController = Provider.of<CoreController>(context);
 
     return MaterialApp(
+      key: Key('MaterialApp'),
       title: 'Flutter Bootstrap',
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,

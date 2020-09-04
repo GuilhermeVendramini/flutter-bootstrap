@@ -8,6 +8,7 @@ class CoreModule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
+      key: Key('CoreModule'),
       providers: [
         Provider<CoreController>(create: (_) => CoreController()),
       ],
