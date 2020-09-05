@@ -1,8 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_bootstrap/app/core/core.controller.dart';
 import 'package:flutter_bootstrap/app/shared/models/user/model.user.dart';
 import 'package:flutter_bootstrap/app/shared/services/users/service.users.dart';
 import 'package:flutter_bootstrap/app/shared/utils/i18n/i18n.config.dart';
+import 'package:flutter_bootstrap/app/shared/utils/inject/bind.dart';
 import 'package:flutter_bootstrap/app/shared/utils/validators/validator.default.dart';
 import 'package:mobx/mobx.dart';
 
@@ -12,11 +12,7 @@ enum SignInUserStatus { IDLE, LOADING, DONE, ERROR }
 
 class AuthLoginController = _AuthLoginBase with _$AuthLoginController;
 
-abstract class _AuthLoginBase with Store {
-  CoreController coreController;
-
-  _AuthLoginBase({@required this.coreController});
-
+abstract class _AuthLoginBase extends Bind with Store {
   ServiceUsers _serviceUsers = ServiceUsers();
 
   ModelUser currentUser;
@@ -62,7 +58,7 @@ abstract class _AuthLoginBase with Store {
         return null;
       }
 
-      coreController.currentUser = currentUser;
+      getBond<CoreController>().currentUser = currentUser;
       signInUserStatus = SignInUserStatus.DONE;
       return currentUser;
     } catch (e) {
