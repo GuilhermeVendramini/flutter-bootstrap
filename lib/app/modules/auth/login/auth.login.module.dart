@@ -11,8 +11,11 @@ class AuthLoginModule extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider<AuthLoginController>(
-          create: (_) => AuthLoginController()
-            ..setBond(Provider.of<CoreController>(context)),
+          create: (_) => AuthLoginController(
+            bonds: [
+              Provider.of<CoreController>(context),
+            ],
+          ),
         ),
       ],
       child: AuthLoginPage(),

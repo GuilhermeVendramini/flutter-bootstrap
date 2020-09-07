@@ -13,6 +13,8 @@ enum SignInUserStatus { IDLE, LOADING, DONE, ERROR }
 class AuthLoginController = _AuthLoginBase with _$AuthLoginController;
 
 abstract class _AuthLoginBase extends Bind with Store {
+  _AuthLoginBase({bonds}) : super(bonds: bonds);
+
   ServiceUsers _serviceUsers = ServiceUsers();
 
   ModelUser currentUser;
@@ -58,7 +60,7 @@ abstract class _AuthLoginBase extends Bind with Store {
         return null;
       }
 
-      getBond<CoreController>().currentUser = currentUser;
+      get<CoreController>().currentUser = currentUser;
       signInUserStatus = SignInUserStatus.DONE;
       return currentUser;
     } catch (e) {

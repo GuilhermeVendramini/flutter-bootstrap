@@ -1,5 +1,9 @@
 class Bind<T> {
-  List<T> _bind = [];
-  setBond(T item) => _bind.add(item);
-  getBond<T>() => _bind.whereType<T>().first;
+  List<T> _bonds;
+
+  Bind({List<T> bonds = const []}) {
+    _bonds = bonds;
+  }
+
+  get<T>() => _bonds.whereType<T>().first;
 }
