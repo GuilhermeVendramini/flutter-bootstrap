@@ -20,9 +20,11 @@ class _WidgetDefaultDrawerState extends State<WidgetDefaultDrawer> {
   Widget build(BuildContext context) {
     _coreController = Provider.of<CoreController>(context);
     return Drawer(
+      key: Key('WidgetDefaultDrawer'),
       child: ListView(
         children: <Widget>[
           DrawerHeader(
+            key: Key('WidgetDefaultDrawerHeader'),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -39,6 +41,7 @@ class _WidgetDefaultDrawerState extends State<WidgetDefaultDrawer> {
             ),
           ),
           ListTile(
+            key: Key('WidgetDefaultDrawer.home'),
             leading: Icon(Icons.home),
             title: Text('Home'),
             onTap: () {
@@ -46,6 +49,7 @@ class _WidgetDefaultDrawerState extends State<WidgetDefaultDrawer> {
             },
           ),
           ListTile(
+            key: Key('WidgetDefaultDrawer.logout'),
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),
             onTap: _logoutUser,

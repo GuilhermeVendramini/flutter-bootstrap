@@ -13,6 +13,7 @@ class SnackBarDefault {
   }) {
     return Scaffold.of(context).showSnackBar(
       SnackBar(
+        key: Key('SnackBarDefault'),
         backgroundColor: backgroundColor,
         content: Text(
           content,

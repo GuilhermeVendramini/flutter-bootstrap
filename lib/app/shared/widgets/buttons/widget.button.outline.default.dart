@@ -9,14 +9,15 @@ class WidgetButtonOutlineDefault extends StatelessWidget {
   final Color highlightedBorderColor;
   final Function onPressed;
 
-  WidgetButtonOutlineDefault({
-    @required this.text,
-    @required this.onPressed,
-    this.buttonWidth = 150.0,
-    this.textColor = CoreThemeColorDefault.identityColor,
-    this.splashColor = CoreThemeColorDefault.splashColor,
-    this.highlightedBorderColor = CoreThemeColorDefault.identityColor,
-  });
+  WidgetButtonOutlineDefault(
+      {@required this.text,
+      @required this.onPressed,
+      this.buttonWidth = 150.0,
+      this.textColor = CoreThemeColorDefault.identityColor,
+      this.splashColor = CoreThemeColorDefault.splashColor,
+      this.highlightedBorderColor = CoreThemeColorDefault.identityColor,
+      key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

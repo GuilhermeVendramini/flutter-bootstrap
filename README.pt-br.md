@@ -11,7 +11,7 @@ Idiomas: [Inglês](README.md), Português do Brasil (esse arquivo)
 - [Padrões](#padrões)
 - [Multi Lingua](#multi-lingua)
 - [Tema](#tema)
-- [TODO](#todo)
+- [Testes](#testes)
 
 ## Requisitos
 
@@ -293,6 +293,10 @@ class CoreThemesDefault {
 	),
 ```
 
-## TODO
+## Testes
 
-- Testes unitários e de Widget (UI).
+Execute:
+
+```
+   flutter drive --target=test_driver/app/app.dart
+```

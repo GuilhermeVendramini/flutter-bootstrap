@@ -14,7 +14,8 @@ class WidgetButtonFlatDefault extends StatelessWidget {
     this.buttonWidth = 150.0,
     this.textColor = CoreThemeColorDefault.identityColor,
     this.splashColor = CoreThemeColorDefault.splashColor,
-  });
+    key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

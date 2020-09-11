@@ -3,6 +3,7 @@ import 'package:flutter_bootstrap/app/shared/utils/i18n/i18n.config.dart';
 import 'package:flutter_bootstrap/app/shared/widgets/drawers/widget.drawer.default.dart';
 
 class HomePage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

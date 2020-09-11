@@ -23,7 +23,8 @@ class WidgetFormFieldTextDefault extends StatelessWidget {
     this.onChanged,
     this.helperText,
     this.controller,
-  });
+    key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

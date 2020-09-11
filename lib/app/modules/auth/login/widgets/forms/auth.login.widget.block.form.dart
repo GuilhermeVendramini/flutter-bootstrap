@@ -48,6 +48,7 @@ class _AuthLoginWidgetBlockFormState extends State<AuthLoginWidgetBlockForm> {
       child: Column(
         children: <Widget>[
           WidgetFormFieldTextDefault(
+            key: Key('fieldEmailAddress'),
             textInputType: TextInputType.emailAddress,
             hintText: i18nDefault.email.i18n,
             icon: Icons.email,
@@ -55,6 +56,7 @@ class _AuthLoginWidgetBlockFormState extends State<AuthLoginWidgetBlockForm> {
             onChanged: _authLoginController.onChangeEmail,
           ),
           WidgetFormFieldPasswordDefault(
+            key: Key('fieldPassword'),
             hintText: i18nDefault.password.i18n,
             icon: Icons.lock,
             validator: ValidatorDefault.password,
@@ -69,6 +71,7 @@ class _AuthLoginWidgetBlockFormState extends State<AuthLoginWidgetBlockForm> {
               return CircularProgressIndicator();
             } else {
               return WidgetButtonRaisedDefault(
+                key: Key('buttonSubmitLogin'),
                 text: i18nDefault.login.i18n,
                 onPressed: _authLoginController.emailPasswordValidated
                     ? _formSubmit

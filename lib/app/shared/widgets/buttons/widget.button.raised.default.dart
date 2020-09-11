@@ -16,7 +16,8 @@ class WidgetButtonRaisedDefault extends StatelessWidget {
     this.buttonColor = CoreThemeColorDefault.identityColor,
     this.textColor = CoreThemeColorDefault.white,
     this.splashColor = CoreThemeColorDefault.splashColor,
-  });
+    key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

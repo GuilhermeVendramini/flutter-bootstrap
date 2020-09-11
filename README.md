@@ -11,7 +11,7 @@ Languages: English (this file), [Brazilian Portuguese](README.pt-br.md)
 - [Patterns](#patterns)
 - [Multi Language](#multi-language)
 - [Theme](#theme)
-- [TODO](#todo)
+- [Tests](#tests)
 
 ## Requirements
 
@@ -293,6 +293,10 @@ class CoreThemesDefault {
 	),
 ```
 
-## TODO
+## Tests
 
-- Unit and Widgets (UI) tests
+Run:
+
+```
+   flutter drive --target=test_driver/app/app.dart
+```

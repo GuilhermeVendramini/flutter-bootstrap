@@ -21,6 +21,7 @@ class AuthLoginWidgetBlockLogin extends StatelessWidget {
             height: 40.0,
           ),
           WidgetButtonFlatDefault(
+            key: Key('buttonRecovery'),
             text: i18nDefault.authLoginForgotPassword.i18n,
             onPressed: () {
               Navigator.pushNamed(context, '/recovery');
@@ -30,6 +31,7 @@ class AuthLoginWidgetBlockLogin extends StatelessWidget {
             height: 10.0,
           ),
           WidgetButtonOutlineDefault(
+            key: Key('buttonRegister'),
             text: i18nDefault.authLoginSignUp.i18n,
             onPressed: () {
               Navigator.pushNamed(context, '/register');

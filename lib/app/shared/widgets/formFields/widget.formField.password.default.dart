@@ -19,7 +19,8 @@ class WidgetFormFieldPasswordDefault extends StatefulWidget {
     this.enabled = true,
     this.onChanged,
     this.helperText,
-  });
+    key,
+  }) : super(key: key);
 
   @override
   _WidgetFormFieldPasswordDefaultState createState() =>
