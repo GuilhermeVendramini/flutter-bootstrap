@@ -20,7 +20,6 @@ class _WidgetDefaultDrawerState extends State<WidgetDefaultDrawer> {
   Widget build(BuildContext context) {
     _coreController = Provider.of<CoreController>(context);
     return Drawer(
-      key: Key('WidgetDefaultDrawer'),
       child: ListView(
         children: <Widget>[
           DrawerHeader(

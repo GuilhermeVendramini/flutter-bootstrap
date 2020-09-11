@@ -94,5 +94,20 @@ void authLoginTest() {
       await delay();
       await driver.waitFor(_homePage);
     });
+
+    test('Logout', () async {
+      final _drawer = find.byTooltip(
+          'Abrir menu de navegação'); //change to "Open navigation menu" if running in english
+      final _widgetDefaultDrawerLogout =
+          find.byValueKey('WidgetDefaultDrawer.logout');
+
+      await driver.waitFor(_drawer);
+      await driver.tap(_drawer);
+      await delay();
+      await driver.waitFor(_widgetDefaultDrawerLogout);
+      await driver.tap(_widgetDefaultDrawerLogout);
+      await delay();
+      await driver.waitFor(find.byValueKey('AuthLoginPage'));
+    });
   });
 }
